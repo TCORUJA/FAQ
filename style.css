@@ -1,0 +1,102 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+	/* background:url(img/background/Background.png) repeat-x fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden; */
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+  font-size: 16px;
+}
+input, textarea{
+  border: solid 1px #00000000;
+  border-radius: 5px;
+}
+
+
+/* HEADER */
+.conteudoTopo{
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 25px;/* 
+	background:url(Img/Background/BackgroundTopo1.png); */
+  /* background-color: #EF7D00; */
+  background-size: cover;
+  background-position: center;
+}
+.nomeTopo{
+  font-size: 32px;
+  text-align: center;
+  padding: 6px 0;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+
+/* MAIN */
+
+.perguntas{
+  padding: 20px;
+}
+.pergunta{
+  padding: 15px;
+  margin: 15px;
+  border-radius: 3px;
+}
+.conteudoTituloPergunta{
+  display: flex;
+  padding: 5px;
+}
+.tituloPergunta{
+  padding-left: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.conteudoBotaoExpadirRecolher{
+  position: absolute;
+  right: 0;
+  margin-right: 55px;
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  font-weight: bolder;
+}
+.recolher{
+  transform: rotate(180deg);
+}
+.expandir{
+  transform: rotate(0deg);
+}
+.conteudoRespostaPergunta{
+  padding: 10px 20px;
+}
+.respostaPergunta{
+  font-weight: 600;
+}
+
+
+
+
+
+.displayNone{
+  display: none;
+}
+
+@media only screen and (max-width: 915px){
+  .widthGeral{
+    width: 800px;
+  }
+  #div1_1, #div1_3,#div2_1, #div2_3{
+    overflow-x: scroll;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 815px){
+  #div1_1, #div1_3,#div2_1, #div2_3{
+    overflow-x: scroll;
+    width: 100%;
+  }
+}
