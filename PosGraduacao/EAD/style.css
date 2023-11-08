@@ -1,0 +1,149 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+	/* background:url(img/background/Background.png) repeat-x fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden; */
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+  font-size: 16px;
+}
+input, textarea{
+  border: solid 1px #00000000;
+  border-radius: 5px;
+}
+a{
+  text-decoration: none;
+}
+
+/* Scroll */
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000000;
+  border-left: 2px solid #979797;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FF0055;
+  border-radius: 10px;
+  border-left: 2px solid #979797;
+}
+
+/* Ocultar/Exibir */
+.exibir{
+  opacity: 1;
+  height: 1;
+  padding: 10px 20px;
+  transition: opacity .7s ease, height .7s ease , padding .7s ease;
+  overflow: visible;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.ocultar{
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  transition: opacity .7s ease, height .7s ease , padding .7s ease;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* HEADER */
+.conteudoTopo{
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 25px; 
+	/*background:url(Img/Background/BackgroundTopo1.png); */
+  /* background-color: #EF7D00; */
+  background-size: cover;
+  background-position: center;
+}
+.nomeTopo{
+  font-size: 32px;
+  text-align: center;
+  padding: 6px 0;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+
+/* MAIN */
+
+.perguntas{
+  padding: 20px;
+}
+.pergunta{
+  padding: 15px;
+  margin: 15px;
+  border-radius: 3px;
+}
+.conteudoTituloPergunta{
+  width: 100%;
+  display: flex;
+  padding: 5px;
+}
+.tituloPergunta{
+  padding-left: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  padding-right: 35px;
+}
+.conteudoBotaoExpadirRecolher{
+  position: absolute;
+  right: 0;
+  margin-right: 55px;
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  font-weight: bolder;
+}
+.recolher{
+  transition: transform 1s;
+  transform: rotate(-180deg);
+}
+.expandir{
+  transition: transform 1s;
+  transform: rotate(-0deg);
+}
+.respostaPergunta{
+  font-weight: 600;
+}
+
+.coteudoBotaoFormulario{
+  text-align: center;
+  padding: 60px 10px 20px 10px;
+}
+.botaoFormulario{
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 915px){
+  .widthGeral{
+    width: 800px;
+  }
+  #div1_1, #div1_3,#div2_1, #div2_3{
+    overflow-x: scroll;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 815px){
+  #div1_1, #div1_3,#div2_1, #div2_3{
+    overflow-x: scroll;
+    width: 100%;
+  }
+}
