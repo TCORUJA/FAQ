@@ -21,18 +21,16 @@ a{
 
 /* Scroll */
 body::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
 }
 
 body::-webkit-scrollbar-track {
-  background: #000000;
-  border-left: 2px solid #979797;
+  background: #00000000;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: #FF0055;
   border-radius: 10px;
-  border-left: 2px solid #979797;
 }
 
 /* Ocultar/Exibir */
@@ -62,7 +60,6 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto;
   padding: 10px 25px; 
 	/*background:url(Img/Background/BackgroundTopo1.png); */
-  /* background-color: #EF7D00; */
   background-size: cover;
   background-position: center;
 }
