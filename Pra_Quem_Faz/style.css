@@ -21,11 +21,11 @@ a{
 
 /* Scroll */
 body::-webkit-scrollbar {
-  width: 4px;
+  width: 3px;
 }
 
 body::-webkit-scrollbar-track {
-  background: #00000000;
+  background: #000000;
 }
 
 body::-webkit-scrollbar-thumb {
