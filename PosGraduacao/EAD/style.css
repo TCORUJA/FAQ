@@ -3,8 +3,7 @@
   margin: 0;
 }
 body{
-	/* background:url(Img/Background/Background.png) repeat-x fixed; */
-	background: linear-gradient(180deg, #004070, #0F96AE);
+	background:url(Img/Background/Background.png) repeat-x fixed;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
@@ -22,15 +21,15 @@ a{
 
 /* Scroll */
 body::-webkit-scrollbar {
-  width: 3px;
+  width: 4px;
 }
 
 body::-webkit-scrollbar-track {
-	background: #000000;
+	background: #ffffff;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #F5C200;
+  background-color: #0F96AE;
   border-radius: 10px;
 }
 
@@ -57,19 +56,28 @@ body::-webkit-scrollbar-thumb {
 
 /* HEADER */
 .conteudoTopo{
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   padding: 10px 25px; 
-	/*background:url(Img/Background/BackgroundTopo.png); */
+	/* background:url(Img/Background/BackgroundTopo.png); */
   background-size: cover;
   background-position: center;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
 }
 .nomeTopo{
-  font-size: 32px;
+  font-size: 45px;
   text-align: center;
-  padding: 6px 0;
+  padding: 0;
   font-weight: bolder;
   color: #ffffff;
+}
+.dots{
+  background-image: radial-gradient(#0F96AE 20%, #ffffff00 20%);
+  background-position: 0 0;
+  background-size: 15px 15px;
+  margin: auto 15px;
+  height: 45px;
 }
 
 
@@ -79,10 +87,10 @@ body::-webkit-scrollbar-thumb {
   padding: 20px;
 }
 .pergunta{
-  padding: 15px;
-  margin: 15px;
+  padding: 10px;
+  margin: 10px;
   border-radius: 3px;
-  background-color: #ffffff4b;
+  background-color: #003f70d7;
 }
 .conteudoTituloPergunta{
   width: 100%;
@@ -99,18 +107,18 @@ body::-webkit-scrollbar-thumb {
 .conteudoBotaoExpadirRecolher{
   position: absolute;
   right: 0;
-  margin-right: 55px;
+  margin-right: 45px;
   cursor: pointer;
   border-radius: 50px;
   display: flex;
   font-weight: bolder;
 }
 .recolher{
-  transition: transform 1s;
+  transition: transform .6s;
   transform: rotate(-180deg);
 }
 .expandir{
-  transition: transform 1s;
+  transition: transform .6s;
   transform: rotate(-0deg);
 }
 

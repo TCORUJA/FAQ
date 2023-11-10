@@ -1,0 +1,157 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+	background:url(Img/Background/Background.png) repeat-x fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+  font-size: 16px;
+}
+input, textarea{
+  border: solid 1px #00000000;
+  border-radius: 5px;
+}
+a{
+  text-decoration: none;
+}
+
+/* Scroll */
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #EA5A33;
+  border-radius: 10px;
+}
+
+/* Ocultar/Exibir */
+.exibir{
+  opacity: 1;
+  height: 1;
+  padding: 10px 20px;
+  transition: opacity .7s ease, height .7s ease , padding .7s ease;
+  overflow: visible;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.ocultar{
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  transition: opacity .7s ease, height .7s ease , padding .7s ease;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* HEADER */
+.conteudoTopo{
+  width: 98%;
+  margin: 0 auto;
+  padding: 10px 25px; 
+	/* background:url(Img/Background/BackgroundTopo.png); */
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.nomeTopo{
+  font-size: 45px;
+  text-align: center;
+  padding: 0;
+  font-weight: bolder;
+  color: #ffffff;
+}
+.dots{
+  background-image: radial-gradient(#EF7D00 20%, #ffffff00 20%);
+  background-position: 0 0;
+  background-size: 15px 15px;
+  margin: auto 15px;
+  height: 45px;
+}
+
+
+/* MAIN */
+
+.perguntas{
+  padding: 10px 30px;
+  margin: 30px;
+  background-color: #ffffff93;
+}
+.pergunta{
+  padding: 10px 0;
+  /* border-radius: 3px; */
+  border-bottom: #EA5A33 1px solid;
+}
+/* .pergunta:first-child{
+  border-top: #EA5A33 1px solid;
+} */
+.conteudoTituloPergunta{
+  width: 100%;
+  display: flex;
+  padding: 5px 0;
+  cursor: pointer;
+}
+.tituloPergunta{
+  cursor: pointer;
+  font-size: 18px;
+  padding-right: 35px;
+}
+.conteudoBotaoExpadirRecolher{
+  position: absolute;
+  right: 0;
+  margin-right: 60px;
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  font-weight: bolder;
+}
+.recolher{
+  transition: transform .6s;
+  transform: rotate(-180deg);
+}
+.expandir{
+  transition: transform .6s;
+  transform: rotate(-0deg);
+}
+
+.coteudoBotaoFormulario{
+  text-align: center;
+  padding: 60px 10px 20px 10px;
+}
+.botaoFormulario{
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 915px){
+  .widthGeral{
+    width: 800px;
+  }
+  #div1_1, #div1_3,#div2_1, #div2_3{
+    overflow-x: scroll;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 815px){
+  #div1_1, #div1_3,#div2_1, #div2_3{
+    overflow-x: scroll;
+    width: 100%;
+  }
+}
